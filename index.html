@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanglarFashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                price: '#FABE4C',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body>
+    <header class=" bg-amber-100">
+        <!-- nav -->
+        <div class="navbar bg-base-300">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">BanglarFashion</a>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                  </div>
+                </label>
+                <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                  <div class="card-body">
+                    <span class="font-bold text-lg">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="/images/profile.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <!-- banner -->
+        <div class="container mx-auto py-12 md:flex justify-center items-center mt-12">
+            <div class="space-y-6 px-4">
+                <h1 class="text-7xl font-semibold uppercase">
+                    <span class="text-amber-400">Be the Nayok</span>
+                    <br>
+                    of Any Season
+                </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, deleniti.</p>
+                <button class="py-4 px-8 rounded-lg text-white uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                    Buy Now</button>
+            </div>
+            <div>
+                <img class="w-3/4 md:w-full" src="images/pngwing.com (6).png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- woman jacket section -->
+        <section class="mt-12">
+            <h2 class="text-5xl font-semibold uppercase">Woman Jacket</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <!-- jacket 1 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto" src="images/jacket-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Green Coat Jacket </h3>
+                        <p class="mb-5">Stay warm and stylish with this women's jacket, offering a perfect balance of fashion and comfort. Its sleek design and weather-resistant features make it ideal for any occasion.</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳2,999</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- jacket 2 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto" src="images/jacket-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Yellow Coat Jacket </h3>
+                        <p class="mb-5">Embrace versatility and fashion-forward style with this women's jacket. Designed with a flattering fit and functional details, it's a must-have addition to your outerwear collection.</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳2,999</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- jacket 3 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto" src="images/jacket-3.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Red Coat Jacket </h3>
+                        <p class="mb-5">Elevate your wardrobe with this chic women's jacket. Its combination of a flattering silhouette, cozy warmth, and trendy details ensures you'll stay both stylish and comfortable</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳2,999</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- man jacket -->
+        <section class="mt-10 mb-10">
+            <h2 class="text-5xl font-semibold uppercase">Mens Wear</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <!-- jacket 1 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto" src="images/Men1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Brown Jacket </h3>
+                        <p class="mb-5">The jacket is a stylish and functional outerwear piece made from durable materials. It features a zippered front, multiple pockets, and adjustable cuffs for a personalized fit. With its water-resistant </p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳3,499</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- jacket 2 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto"" src="images/Men2.avif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Navy Blue Jacket </h3>
+                        <p class="mb-5">
+                            The jacket is a stylish and functional outerwear piece made from durable materials. It features a zippered front, multiple pockets, and adjustable cuffs for a personalized fit. With its water-resistant</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳3,499</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- jacket 3 card -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img class="h-80 mx-auto" src="images/pngwing.com (8).png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl my-5">Casio - Edifice </h3>
+                        <p class="mb-5">The watch is an elegant and functional timepiece with a stainless steel case, leather strap, and precise quartz movement. Its minimalist dial, date window, and luminous hands </p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">৳5,999</h2>
+                            <button class="text-white btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="order-2 md:order-1 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                <img class="h-20 w-20" src="images/house.png" alt="">
+                <div>
+                    <h3 class="text-2xl">Find the Perfect Fit</h3>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 bg-slate-200 row-span-3 p-6 rounded-2xl">
+                <img src="images/shopping.png" alt="">
+            </div>
+            <div class="order-3 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                <img class="h-20 w-20" src="images/house.png" alt="">
+                <div>
+                    <h3 class="text-2xl">Find the Perfect Color</h3>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+            <div class="order-4 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                <img class="h-20 w-20" src="images/house.png" alt="">
+                <div>
+                    <h3 class="text-2xl">Find the Perfect Dress</h3>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<footer class="footer p-10 bg-base-200 text-base-content mt-10">
+  <div>
+    
+    <p class="text-3xl">BanglarFashion</p>
+  </div> 
+  <div>
+    <span class="footer-title">Services</span> 
+    <a class="link link-hover">Branding</a> 
+    <a class="link link-hover">Design</a> 
+    <a class="link link-hover">Marketing</a> 
+    <a class="link link-hover">Advertisement</a>
+  </div> 
+  <div>
+    <span class="footer-title">Company</span> 
+    <a class="link link-hover">About us</a> 
+    <a class="link link-hover">Contact</a> 
+    <a class="link link-hover">Jobs</a> 
+    <a class="link link-hover">Press kit</a>
+  </div> 
+  <div>
+    <span class="footer-title">Legal</span> 
+    <a class="link link-hover">Terms of use</a> 
+    <a class="link link-hover">Privacy policy</a> 
+    <a class="link link-hover">Cookie policy</a>
+  </div>
+</footer>
+
+</body>
+
+</html>
